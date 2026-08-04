@@ -1,38 +1,100 @@
+import Link from "next/link";
+
 export default function Hero() {
   return (
-    <section className="flex min-h-screen flex-col items-center justify-center px-6 text-center">
+    <section className="relative overflow-hidden bg-slate-950">
 
-      <p className="mb-4 rounded-full border border-cyan-500 px-4 py-1 text-sm text-cyan-400">
-        🌍 Public Learning Platform
-      </p>
+      {/* Background Glow */}
 
-      <h1 className="text-5xl font-extrabold md:text-7xl">
-        AI & Data Center Learning Hub
-      </h1>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(6,182,212,0.18),transparent_60%)]" />
 
-      <h2 className="mt-4 text-2xl font-semibold text-cyan-400 md:text-4xl">
-        Explore • Understand • Innovate
-      </h2>
+      <div className="relative max-w-7xl mx-auto px-8 pt-24 pb-28">
 
-      <p className="mt-8 max-w-3xl text-lg leading-8 text-gray-300">
-        Making Artificial Intelligence and Data Center technologies
-        understandable for everyone—from children and students to
-        professionals, educators, and journalists.
-      </p>
+        {/* Badge */}
 
-      <div className="mt-10 flex flex-wrap justify-center gap-4">
+        <div className="inline-flex items-center rounded-full border border-cyan-500/40 bg-cyan-500/10 px-5 py-2 text-cyan-300">
+          🚀 Learn the technology powering Artificial Intelligence
+        </div>
 
-        <button className="rounded-xl bg-cyan-500 px-8 py-4 font-semibold text-black hover:bg-cyan-400 transition">
-          Start Learning
-        </button>
+        {/* Heading */}
 
-        <button className="rounded-xl border border-cyan-500 px-8 py-4 font-semibold text-cyan-300 hover:bg-cyan-500 hover:text-black transition">
-          Latest AI News
-        </button>
+        <h1 className="mt-8 text-6xl md:text-7xl lg:text-8xl font-black leading-tight">
 
-        <button className="rounded-xl border border-white px-8 py-4 font-semibold hover:bg-white hover:text-black transition">
-          Explore Data Centers
-        </button>
+          Inside
+          <span className="text-cyan-400"> AI</span>
+
+          <br />
+
+          Learning Hub
+
+        </h1>
+
+        {/* Subtitle */}
+
+        <p className="mt-10 max-w-4xl text-xl leading-10 text-gray-300">
+
+          Learn Artificial Intelligence, Data Centers,
+          Cloud Computing, GPUs, Networking and the hidden
+          infrastructure powering our modern digital world.
+
+          Designed for students, engineers,
+          journalists, professionals and anyone curious
+          about the future of technology.
+
+        </p>
+
+        {/* Buttons */}
+
+        <div className="mt-14 flex flex-wrap gap-5">
+
+          <Link
+            href="/learn/ai"
+            className="rounded-xl bg-cyan-500 px-8 py-4 text-lg font-bold text-black hover:bg-cyan-400 transition"
+          >
+            🤖 Start AI Academy
+          </Link>
+
+          <Link
+            href="/learn/datacenter"
+            className="rounded-xl border border-cyan-500 px-8 py-4 text-lg hover:bg-cyan-500/10 transition"
+          >
+            🏢 Explore Data Centers
+          </Link>
+
+          <Link
+            href="/articles"
+            className="rounded-xl border border-slate-700 px-8 py-4 text-lg hover:border-cyan-500 transition"
+          >
+            📖 Read Articles
+          </Link>
+
+        </div>
+
+        {/* Stats */}
+
+        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
+
+          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
+            <div className="text-4xl font-black text-cyan-400">30+</div>
+            <p className="mt-2 text-gray-300">AI Lessons</p>
+          </div>
+
+          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
+            <div className="text-4xl font-black text-cyan-400">30+</div>
+            <p className="mt-2 text-gray-300">Data Center Lessons</p>
+          </div>
+
+          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
+            <div className="text-4xl font-black text-cyan-400">100+</div>
+            <p className="mt-2 text-gray-300">Educational Articles</p>
+          </div>
+
+          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
+            <div className="text-4xl font-black text-cyan-400">Daily</div>
+            <p className="mt-2 text-gray-300">Industry News</p>
+          </div>
+
+        </div>
 
       </div>
 
