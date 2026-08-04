@@ -5,42 +5,42 @@ const cards = [
     emoji: "🤖",
     title: "Artificial Intelligence",
     description:
-      "Learn what AI is, how it works, and why it is transforming the world.",
-    href: "/learn/ai",
+      "Learn what Artificial Intelligence is, how it works, machine learning, deep learning, LLMs, ChatGPT and real-world AI applications.",
+    href: "/learn/artificial-intelligence",
   },
   {
     emoji: "🏢",
     title: "Data Centers",
     description:
-      "Explore the facilities that power cloud computing and AI services.",
-    href: "/learn/datacenter",
+      "Explore servers, racks, cooling, power, networking and the infrastructure that powers cloud computing and AI.",
+    href: "/learn/data-centers",
   },
   {
     emoji: "⚡",
     title: "GPUs",
     description:
-      "Understand why GPUs are the engine behind modern AI systems.",
+      "Understand GPU architecture, CUDA, AI acceleration, NVIDIA GPUs and modern AI computing.",
     href: "/learn/gpu",
   },
   {
     emoji: "☁️",
     title: "Cloud Computing",
     description:
-      "Discover AWS, Azure, Google Cloud, and how applications scale globally.",
+      "Learn AWS, Microsoft Azure, Google Cloud, virtualization, containers and cloud architecture.",
     href: "/learn/cloud",
   },
   {
     emoji: "🌐",
     title: "Networking",
     description:
-      "Learn how servers, switches, routers, and cables connect AI infrastructure.",
+      "Learn networking fundamentals, TCP/IP, switches, routers, VLANs, fiber optics and data center networking.",
     href: "/learn/networking",
   },
   {
     emoji: "🧠",
     title: "Machine Learning",
     description:
-      "Understand training, inference, neural networks, and large language models.",
+      "Discover supervised learning, neural networks, deep learning, transformers and modern AI models.",
     href: "/learn/machine-learning",
   },
 ];
@@ -48,16 +48,19 @@ const cards = [
 export default function LearningCards() {
   return (
     <section className="mx-auto max-w-7xl px-6 py-24">
-      <div className="mb-14 text-center">
-        <h2 className="text-4xl font-bold text-white">
+
+      <div className="mb-16 text-center">
+
+        <h2 className="text-5xl font-black text-white">
           Choose Your Learning Journey
         </h2>
 
-        <p className="mx-auto mt-4 max-w-3xl text-gray-400">
-          From beginner to advanced, explore Artificial Intelligence,
-          Data Center technologies and modern infrastructure through
-          interactive lessons.
+        <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-400">
+          Learn Artificial Intelligence, Data Centers, Cloud Computing,
+          Networking, GPUs and Machine Learning through structured,
+          beginner-friendly lessons.
         </p>
+
       </div>
 
       <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
@@ -67,23 +70,24 @@ export default function LearningCards() {
           <Link
             key={card.title}
             href={card.href}
-            className="group rounded-2xl border border-slate-800 bg-slate-900 p-8 transition duration-300 hover:scale-105 hover:border-cyan-500"
+            className="block rounded-3xl border border-slate-800 bg-slate-900 p-8 transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-2xl hover:shadow-cyan-500/20"
           >
 
-            <div className="text-5xl">
+            <div className="text-6xl">
               {card.emoji}
             </div>
 
-            <h3 className="mt-6 text-2xl font-bold text-cyan-400 group-hover:text-white">
+            <h3 className="mt-6 text-3xl font-bold text-cyan-400">
               {card.title}
             </h3>
 
-            <p className="mt-4 text-gray-300">
+            <p className="mt-5 text-lg leading-8 text-gray-300">
               {card.description}
             </p>
 
-            <div className="mt-8 font-semibold text-cyan-400">
-              Start Learning →
+            <div className="mt-8 flex items-center font-bold text-cyan-400">
+              Start Learning
+              <span className="ml-2">→</span>
             </div>
 
           </Link>
@@ -91,6 +95,7 @@ export default function LearningCards() {
         ))}
 
       </div>
+
     </section>
   );
 }
