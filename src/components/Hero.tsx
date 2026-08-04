@@ -19,28 +19,21 @@ export default function Hero() {
         {/* Heading */}
 
         <h1 className="mt-8 text-6xl md:text-7xl lg:text-8xl font-black leading-tight">
-
           Inside
           <span className="text-cyan-400"> AI</span>
-
           <br />
-
           Learning Hub
-
         </h1>
 
         {/* Subtitle */}
 
         <p className="mt-10 max-w-4xl text-xl leading-10 text-gray-300">
+          Learn Artificial Intelligence, Data Centers, Cloud Computing,
+          GPUs, Networking and the hidden infrastructure powering our
+          modern digital world.
 
-          Learn Artificial Intelligence, Data Centers,
-          Cloud Computing, GPUs, Networking and the hidden
-          infrastructure powering our modern digital world.
-
-          Designed for students, engineers,
-          journalists, professionals and anyone curious
-          about the future of technology.
-
+          Designed for students, engineers, journalists,
+          professionals and anyone curious about the future of technology.
         </p>
 
         {/* Buttons */}
@@ -49,49 +42,72 @@ export default function Hero() {
 
           <Link
             href="/learn/ai"
-            className="rounded-xl bg-cyan-500 px-8 py-4 text-lg font-bold text-black hover:bg-cyan-400 transition"
+            className="rounded-xl bg-cyan-500 px-8 py-4 text-lg font-bold text-black transition hover:bg-cyan-400"
           >
             🤖 Start AI Academy
           </Link>
 
           <Link
             href="/learn/datacenter"
-            className="rounded-xl border border-cyan-500 px-8 py-4 text-lg hover:bg-cyan-500/10 transition"
+            className="rounded-xl border border-cyan-500 px-8 py-4 text-lg text-white transition hover:bg-cyan-500 hover:text-black"
           >
             🏢 Explore Data Centers
           </Link>
 
           <Link
             href="/articles"
-            className="rounded-xl border border-slate-700 px-8 py-4 text-lg hover:border-cyan-500 transition"
+            className="rounded-xl border border-slate-700 px-8 py-4 text-lg text-white transition hover:border-cyan-500 hover:bg-slate-900"
           >
             📖 Read Articles
           </Link>
 
+          <Link
+            href="/news"
+            className="rounded-xl border border-emerald-500 px-8 py-4 text-lg font-semibold text-emerald-300 transition hover:bg-emerald-500 hover:text-black"
+          >
+            📰 Live AI News
+          </Link>
+
         </div>
 
-        {/* Stats */}
+        {/* Statistics */}
 
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="mt-20 grid grid-cols-2 gap-8 md:grid-cols-4">
 
           <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
-            <div className="text-4xl font-black text-cyan-400">30+</div>
-            <p className="mt-2 text-gray-300">AI Lessons</p>
+            <div className="text-4xl font-black text-cyan-400">
+              30+
+            </div>
+            <p className="mt-2 text-gray-300">
+              AI Lessons
+            </p>
           </div>
 
           <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
-            <div className="text-4xl font-black text-cyan-400">30+</div>
-            <p className="mt-2 text-gray-300">Data Center Lessons</p>
+            <div className="text-4xl font-black text-cyan-400">
+              30+
+            </div>
+            <p className="mt-2 text-gray-300">
+              Data Center Lessons
+            </p>
           </div>
 
           <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
-            <div className="text-4xl font-black text-cyan-400">100+</div>
-            <p className="mt-2 text-gray-300">Educational Articles</p>
+            <div className="text-4xl font-black text-cyan-400">
+              100+
+            </div>
+            <p className="mt-2 text-gray-300">
+              Educational Articles
+            </p>
           </div>
 
           <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
-            <div className="text-4xl font-black text-cyan-400">Daily</div>
-            <p className="mt-2 text-gray-300">Industry News</p>
+            <div className="text-4xl font-black text-cyan-400">
+              Daily
+            </div>
+            <p className="mt-2 text-gray-300">
+              Live Industry News
+            </p>
           </div>
 
         </div>
