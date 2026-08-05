@@ -1,7 +1,7 @@
 import NewsHero from "@/components/news/NewsHero";
-import FeaturedArticle from "@/components/FeaturedArticle";
-import LiveNewsPreview from "@/components/LiveNewsPreview";
-import Newsletter from "@/components/Newsletter";
+import FeaturedArticle from "@/components/news/FeaturedArticle";
+import LiveNewsPreview from "@/components/news/LiveNewsPreview";
+import Newsletter from "@/components/news/Newsletter";
 
 export const metadata = {
   title: "AI & Technology News | AI & Data Center Learning Hub",
@@ -20,24 +20,23 @@ export default function NewsPage() {
       <FeaturedArticle />
 
       {/* Live News */}
-      <section className="py-20 bg-slate-950">
+      <section className="py-20">
         <div className="max-w-7xl mx-auto px-8">
 
           <div className="text-center mb-12">
 
-            <p className="uppercase tracking-[0.3em] font-semibold text-cyan-400">
-              Latest Headlines
+            <p className="uppercase tracking-widest text-cyan-400 font-semibold">
+              Latest Technology News
             </p>
 
-            <h2 className="mt-5 text-5xl font-black text-white">
-              Live AI & Technology News
+            <h2 className="mt-5 text-5xl font-black">
+              Live AI & Technology Updates
             </h2>
 
-            <p className="mt-6 max-w-4xl mx-auto text-xl leading-9 text-gray-300">
-              Stay updated with the latest news from OpenAI, NVIDIA,
-              Microsoft, Google, AMD, Intel, AWS, Data Centers,
-              Artificial Intelligence, Cloud Computing,
-              Machine Learning and Networking.
+            <p className="mt-6 text-xl text-gray-300 max-w-4xl mx-auto">
+              Stay informed with the latest developments from OpenAI,
+              NVIDIA, AMD, Intel, Google, Microsoft, AWS,
+              Cloud Computing, Data Centers and Artificial Intelligence.
             </p>
 
           </div>
