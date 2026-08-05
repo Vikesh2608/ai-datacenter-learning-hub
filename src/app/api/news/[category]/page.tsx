@@ -1,7 +1,7 @@
-import NewsHero from "@/components/news/NewsHero";
-import FeaturedArticle from "@/components/news/FeaturedArticle";
-import LiveNewsPreview from "@/components/news/LiveNewsPreview";
-import Newsletter from "@/components/news/Newsletter";
+import NewsHero from "@/components/NewsHero";
+import FeaturedArticle from "@/components/FeaturedArticle";
+import LiveNewsPreview from "@/components/LiveNewsPreview";
+import Newsletter from "@/components/Newsletter";
 
 export const metadata = {
   title: "AI & Technology News | AI & Data Center Learning Hub",
