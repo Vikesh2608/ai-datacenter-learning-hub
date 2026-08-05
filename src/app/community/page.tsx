@@ -20,38 +20,19 @@ export default function CommunityPage() {
       {/* Hero */}
       <CommunityHero />
 
-      {/* Community Preview Banner */}
-
-      <section className="bg-purple-900/20 border-y border-purple-500/30 py-8">
-        <div className="mx-auto max-w-6xl px-8 text-center">
-
-          <h2 className="text-3xl font-bold text-purple-300">
-            🚧 Community Hub Preview
-          </h2>
-
-          <p className="mt-4 text-lg text-gray-300">
-            We're building new ways for visitors to share feedback,
-            suggest learning topics, volunteer, and support the project.
-            These interactive community features will become available
-            in future updates as the platform grows.
-          </p>
-
-        </div>
-      </section>
-
       {/* Mission */}
       <CommunityMission />
 
       {/* Community Feedback */}
       <CommunityFeedback />
 
-      {/* Suggest Topics */}
+      {/* Suggest New Topics */}
       <CommunityIdeas />
 
       {/* Volunteer */}
       <CommunityVolunteer />
 
-      {/* Support */}
+      {/* Support the Project */}
       <CommunitySupport />
 
       {/* Roadmap */}
