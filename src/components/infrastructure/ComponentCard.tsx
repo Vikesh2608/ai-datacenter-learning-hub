@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ServerComponent } from "@/data/serverComponents";
 
 interface Props {
@@ -11,9 +12,14 @@ export default function ComponentCard({ component }: Props) {
       href={`/learn/infrastructure/${component.slug}`}
       className="group rounded-2xl border border-slate-800 bg-slate-900 hover:border-cyan-500 transition overflow-hidden"
     >
-      <div className="aspect-video bg-slate-800 flex items-center justify-center">
-        <span className="text-5xl">🖥️</span>
-      </div>
+      <div className="relative aspect-video bg-slate-800">
+  <Image
+    src={component.image}
+    alt={component.name}
+    fill
+    className="object-contain p-6 group-hover:scale-105 transition duration-300"
+  />
+</div>
 
       <div className="p-6">
         <p className="text-cyan-400 text-sm font-semibold uppercase">
